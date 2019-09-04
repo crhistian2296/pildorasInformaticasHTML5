@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+  <head>
+    <title>Css3 New rules</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--estilo en cabecera-->
+    <style>
+      
+      /*selector que permite apuntar a aquellos elementos que contengan el 
+          atributo /*name="misElementos"*/
+      /*1. los p que se llamen misElementos
+      p[name="misElementos"]{
+        color:#df8fbb;
+      }
+      */
+     /*2. solo los p con atributo que empicen por "mis"*/
+      p[name^="mis"]{
+        color:red;
+      }
+      
+      /*3. solo los p  con atributo que finalice con "nes"*/
+      p[name$="nes"]{
+        color:gray;
+      }
+      /*4. todos los p que en algun punto del nobre contengan "ima"*/
+      p[name*="ima"]{
+        color:greenyellow;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Aunque ponga error en el editor si que funciona-->
+    <p name="misElementos">Hola</p>
+    <!--2.-->
+    <p name="misElementos">Adios</p>
+    <!--3.-->
+    <p name="lasFunciones">Febrero</p>
+    <!--4.-->
+    <p name="ultimaPureba">Agosto</p>
+  </body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html> <!--Esta etiqueta indica que estoy programando en html5-->
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!-- Codigo por defecto del archivo
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>TODO write content</div>
+    </body>
+</html>
+-->
+
+<!--todo el codigo del archivo ira entre las 2 etiquetas html -->
+<html lang="es"> <!--indico el idioma(atributo)-->
+    
+  <!--aqui en el head iran: las hojas de estilo, 
+                            los archivos js internos y externos,
+                            los iconos
+                            los titulos
+                            las etiquetas meta(para q los buscadores pueda catalogar la pagina)
+  -->
+  <head>
+      
+    <meta charset="UTF-8"/>
+    <meta name="description" content="pagina web de enseñanza html 5"/>
+    <meta name="keywords" content="html5, css3. Javascript. diseño web"/>
+    
+    <!--title va siempre debtro del head-->
+    <title>pagina de programacion en HTML5</title>
+    
+    <!--estilo en archivo externo-->
+    <link rel="stylesheet" href="mihojadeestilos.css">
+  </head>
+    
+  <body>
+    <header id="cabeceraWeb">
+      <!--la etiqueta h1 llega hasta el h6 y decide el tamaño de la fuente de su texto-->
+      <hgroup>
+      <h1>Este es seria el titulo de la pagina web</h1>
+      <h3>Este es seria el subtitulo de la pagina web</h3>
+      <h4>Este es seria el subtitulo2 de la pagina web</h4>
+      </hgroup>
+    </header>
+    
+    <!--Barra de navegacion-->
+    <nav id="navegacionPrincipal">
+      <!--ul=unorder list; ol=order list-->
+      <ul>
+        <li>Quienes somos</li>
+        <!--estilo en linea-->
+        <li style="background-color: pink">Nuestra merca</li>
+        <li>Contactanos</li>
+        <li>Precios</li>
+      </ul>
+    </nav>
+    
+    <!--Brra lateral-->
+    <aside id="barraLateral">
+      <blockquote>Primer elemento</blockquote>
+      <blockquote>Segundo elemento</blockquote>
+      <blockquote>Tercer elemento</blockquote>
+    </aside>
+    
+    <!--Contenido principal-->
+    <section id="contenidoPrincipal">
+      
+      <article>
+        
+        <header>
+          <h4><mark>Noticia 1</mark></h4>
+        </header>
+        
+        <figure>
+          <!--la ruta puede ser relativa como en java o conpleta-->
+          <img src="file:///run/media/henry/781343535FB65CFE/Descargas/giphy.gif"/>
+          <!--siempre la etiqueta figcaption va siguiendo a la figura o imagen-->
+          <figcaption>
+            Pero Mira ese swing papa!!
+          </figcaption>
+        </figure>
+        
+        <p>hablamos de la <em>noticia 1</em></p>
+        <p>seguimos hablando de la<strong> noticia 1</strong></p>
+        <p>terminamos de hablar de la noticia 1</p>
+        
+        <footer>
+          <p>Comentarios de los usuarios</p>
+        </footer>
+      </article>
+      
+      <article>
+        
+        <header>
+          <h4><cite>Los juegos del hambre</cite> son la noticia 2</h4>
+        </header>
+        
+        <p>hablamos de la noticia 2</p>
+        <p>continuamos hablando de la noticia 2</p>
+        <p>terminamos de hablar de la noticia 2</p>
+        
+        <footer>
+          <p>Comentarios de los usuarios</p>
+        </footer>
+      </article>
+      
+      <article>
+        
+        <header>
+          <h4>Noticia 3</h4>
+        </header>
+        
+        <time datetime="2019/08/31" pubdate>Noticia publicada el dia 31/08/2019</time>
+        
+        <p>hablamos de la noticia 3</p>
+        <p>seguimos hablando de la noticia 3</p>
+        <p>terminamos de hablar de la noticia 3</p>
+        
+        <footer>
+          <p>Comentarios de los usuarios</p>
+        </footer>
+      </article>
+    </section>
+    
+    <!--Pie de pagina-->
+    <footer id="piePrincipal">
+      <p><small>Derechos reservados</small></p>
+      <!--La etiqueta address crea un blocklevel(salto de linea arriba y abajo)-->
+      <address>Telf: 315 087 4278</address>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+  <head>
+    <title>Css3 span</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--estilo en cabecera-->
+    <style>
+      #principal{
+        width: 500px;
+        /*background-color: #9de7e0;*/
+        
+        /*centra el texto dentro de su bloque*/
+        text-align: center;
+        
+        /*da 15 px de margen por arriba y abajo y centra el bloque respecto a la
+        ventana*/
+        margin: 15px auto;
+        
+        /*1 medida hace el paddin hacia todas direcciones,
+          2 medidas hace el paddin A arriba y abajo, y el paddin B a los lados;
+          4 medida: hace el paddin en el orden top, right, bottom,left
+        */
+        padding: 15px;
+          
+        /*borde: grosor, rellerno, color*/
+        border: 3px solid #25514d;
+          
+        /*curvatura del borde
+          1 medida para todos las esquinas o
+          4 medidas         */
+        border-radius:15px;
+          
+        /**sombra para el bloque; color, desplazamiento horizontal, despalzamiento
+        vertical, nivel de difuminacion*/
+        box-shadow: #c49de7 5px 5px 5px;
+        
+        /*degradado de color en el fondo del encabezado(inicio, color1, color2)*
+        1ºFirefox, 2ºGoogle chrome, 3ºMicrosoft edge,4ºOpera*/
+        background:-moz-linear-gradient(top, gray, #CF0);
+        /*el degradado puede ser lineal o radial y el radial recibe parametros 
+        distintos:"center" y "ellipse" son algunos*/
+        background:-webkit-linear-gradient(center, circle, #F00, #CF0);
+        background:-ms-linear-gradient(top, #00F,#3FF);
+        background:-o-linear-gradient(top, #00F,#3FF);
+      }
+      
+      /*para hacer que la fuente sea la que el desrrollador desee en todos los
+      navegadores(no funciona aqui pero asi se hace)*/
+      @font-face{
+        font-family: 'fuentePropia';
+        src:url('file:///run/media/henry/781343535FB65CFE/git/pildorasInformaticasHTML5/2. CSS3NewRules/DejaVuSans-ExtraLight.ttf')
+      }
+      
+      /*Estilo de letra, tamaño y fuente*/
+      #titulo{
+        font:bold 20px 'fuentePropia';
+        text-shadow:gray 3px 3px 2px;
+        
+        /*opacidad del texto: Los 3 primeros parametros son valores no mayores a
+        255 q coombinan Red Greem y Blue*/
+        color: rgba(0, 0, 0, 0.4)
+      }
+    </style>
+  </head>
+  <body>
+    <header id="principal">
+      <span id="titulo">Estilos css3</span>
+      
+    </header>
+  </body>
+</html>

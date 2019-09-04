@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+  <head>
+    <title>Css3 pseudoclases</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--estilo en cabecera-->
+    <style>
+      /*pseudoclase: "nth-child(odd)" pinta los hijos impares de cada etiqueta
+                     "first-child","second-child", "last-child", "only-child"
+      
+      p:nth-child(odd){
+        color: brown
+      }
+      */
+      
+      
+       p:first-child{
+        color: brown
+      }
+    </style>
+  </head>
+  <body>
+    <!--Aunque ponga error en el editor si que funciona-->
+    <p>Hola</p>
+    <p>Adios</p>
+    <p>Febrero</p>
+    <p>Agosto</p>
+    
+    <ol>
+      <li>Frutas</li>
+      <li>
+        <p>manzana</p>
+        <p>pera</p>
+        <p>lima</p>
+        <p>melon</p>
+      </li>
+    </ol>
+  </body>
+</html>
