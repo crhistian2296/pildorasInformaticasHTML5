@@ -44,25 +44,53 @@ and open the template in the editor.
         /*degradado de color en el fondo del encabezado(inicio, color1, color2)
         poner el de google el primero para q los demas no lo copien.
         El orden de ejecucion es de abajo a arriba*
-        1ºFirefox, 2ºGoogle chrome, 3ºMicrosoft edge,4ºOpera*/
-        background:-moz-linear-gradient(top, gray, #CF0);
+        1ºGoogle chrome, 2ºFirefox, 3ºMicrosoft edge,4ºOpera*/
+        background:-webkit-linear-gradient(left, #F00, #CF0);
         /*el degradado puede ser lineal o radial y el radial recibe parametros 
         distintos:"center" y "ellipse" son algunos*/
-        background:-webkit-radial-gradient(circle, #F00, #CF0);
-        background:-ms-linear-gradient(top, #00F,#3FF);
+        background:-moz-radial-gradient(circle, gray, #CF0);
+        background:-ms-radial-gradient(ellipse, #00F,#3FF);
         background:-o-linear-gradient(top, #00F,#3FF);
+        
+        /*
+        forma 2018 para cualquier navegador
+        background: linear-gradient(to bottom right,Turquoise,lime);
+        */
+        
+        /*marco externo*/
+        /*outline: 6px dodgerblue groove;*/
+        /*distancia del marco externo*/
+       /* outline-offset: 10px;*/
+        
+        /*escalar tamaño con un solo parametro.Con 2 parametros ademas se da el efecto
+        espejo*/
+        /*-webkit-transform: scale(0.4, -1.7);*/
+        
+        /*-webkit-transform:rotate(5deg); */
+        
+        /*transformar el punto de vista*/
+        /*-webkit-transform:skew(33deg);*/
+        /*Descubrimmiento: solo se puede hacer una transformacion a la vez*/
+        
+        /*deberia funcionar. Al pasar el raton por encima rota*/
+        -moz-transition:-moz-transform 1s ease 0.5s;
+        #principal:hover{
+          -moz-transform: rotate(5deg);
+        }
       }
       
       /*para hacer que la fuente sea la que el desrrollador desee en todos los
       navegadores(no funciona aqui pero asi se hace)*/
+     /*
       @font-face{
         font-family: 'fuentePropia';
         src:url('file:///run/media/henry/781343535FB65CFE/git/pildorasInformaticasHTML5/2. CSS3NewRules/DejaVuSans-ExtraLight.ttf')
       }
-      
+      */
       /*Estilo de letra, tamaño y fuente*/
       #titulo{
-        font:bold 20px 'fuentePropia';
+        /*font:bold 36px 'fuentePropia';*/
+        font: bold 36px Verdanana, Geneva, sans-serif;
         text-shadow:gray 3px 3px 2px;
         
         /*opacidad del texto: Los 3 primeros parametros son valores no mayores a
