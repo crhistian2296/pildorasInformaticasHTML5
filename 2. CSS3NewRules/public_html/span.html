@@ -41,12 +41,14 @@ and open the template in the editor.
         vertical, nivel de difuminacion*/
         box-shadow: #c49de7 5px 5px 5px;
         
-        /*degradado de color en el fondo del encabezado(inicio, color1, color2)*
+        /*degradado de color en el fondo del encabezado(inicio, color1, color2)
+        poner el de google el primero para q los demas no lo copien.
+        El orden de ejecucion es de abajo a arriba*
         1ºFirefox, 2ºGoogle chrome, 3ºMicrosoft edge,4ºOpera*/
         background:-moz-linear-gradient(top, gray, #CF0);
         /*el degradado puede ser lineal o radial y el radial recibe parametros 
         distintos:"center" y "ellipse" son algunos*/
-        background:-webkit-linear-gradient(center, circle, #F00, #CF0);
+        background:-webkit-radial-gradient(circle, #F00, #CF0);
         background:-ms-linear-gradient(top, #00F,#3FF);
         background:-o-linear-gradient(top, #00F,#3FF);
       }
