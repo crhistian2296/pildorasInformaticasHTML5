@@ -1,0 +1,49 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 6 sept. 2019, 1:44:55
+    Author     : crhistian
+*/
+
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+ padding: 0;
+ margin: 0;
+ font-size: 100%;
+ font-weight: normal;
+}
+table { border-collapse: collapse; border-spacing: 0; }
+td, th, caption { font-weight: normal; text-align: left; }
+img, fieldset { border: 0; }
+ol { padding-left: 1.4em; list-style: decimal; }
+ul { padding-left: 1.4em; list-style:square; }
+q:before, q:after { content:''; }
+
+
+/*Fin del CSS reset*/
+
+
+body{
+  /*Reduce el tamaño*/
+  font-size:65%;
+  
+  
+}
+
+h1{
+  /*2.em: multiplicador de tamaño*/
+  font:normal 2.6em Verdana, Geneva, sans-serif;
+  background:-webkit-linear-gradient(top, #404fd2, paleturquoise);
+  width: 35%;
+  border-radius: 10px;
+  border: #161c54 2px solid;
+  margin: 25px auto;
+  text-align: center;
+  padding: 15px;
+  color: white;
+  box-shadow: #414779 8px 8px 10px;
+  text-shadow: white 2px 2px 2px;
+  
+}
