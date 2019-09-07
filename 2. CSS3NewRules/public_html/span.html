@@ -72,11 +72,13 @@ and open the template in the editor.
         /*-webkit-transform:skew(33deg);*/
         /*Descubrimmiento: solo se puede hacer una transformacion a la vez*/
         
-        /*deberia funcionar. Al pasar el raton por encima rota*/
-        -moz-transition:-moz-transform 1s ease 0.5s;
-        #principal:hover{
-          -moz-transform: rotate(5deg);
-        }
+        /*deberia funcionar. Al pasar el raton por encima rota 0.1 tiepo de reaccion
+        del efecto y 0.5 lo q tarda en finalizarlo*/
+        -moz-transition:-moz-transform 0.5s ease 0.1s;
+      }
+      
+      #principal:hover{
+        -moz-transform: rotate(5deg);
       }
       
       /*para hacer que la fuente sea la que el desrrollador desee en todos los
