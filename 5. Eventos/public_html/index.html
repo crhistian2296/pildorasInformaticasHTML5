@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+  <head>
+    <title>Eventos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script>
+      /*declaramos una variable glogal*/
+      var imagen;
+      
+      function tipoflor(){
+        alert("Florious unknowius");
+      }
+      
+      function manejaflor(){
+        imagen=document.getElementsByTagName("img")[0];
+        
+        
+        /*con addEventListener podemos agregar vasios escuchas a un objeto*/
+        imagen.addEventListener("mouseover", crecer, false);
+        imagen.addEventListener("mouseout", menguar, false);
+        imagen.addEventListener("click", tipoflor, false);
+        
+      }
+      
+      /*Estas funciones demuestran que el orden de las mismas no influye en el programa*/
+      /*Original size:200x200*/
+      function crecer(){
+        imagen.width=225;
+        imagen.height=225;
+      }
+      
+      function menguar(){
+        imagen.width=200;
+        imagen.height=200;
+      }
+      
+      window.onload=manejaflor;
+      
+    </script>
+    
+  </head>
+  
+  
+  <body>
+    <p><img src="/home/crhistian/NetBeansProjects/pildorasInformaticasHTML5/3. Ejercicio/public_html/imagenes/1.jpg"></p>
+    <p>¿Hola que hay puto >:v?</p>
+  </body>
+</html>
