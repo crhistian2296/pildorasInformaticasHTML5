@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+  <head>
+    <title>Prioridad en los escuchas</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script>
+      
+      function LosEventos(){
+        var elemento=document.getElementsByTagName("p")[0];
+        
+        var elemento2=document.getElementsByTagName("img")[0];
+        
+        /*Al decirle true hacemos que tenga prioridad de aparicion sobre la imagen
+         * cuando en la pagina cliqueems sobre la imagen*/
+        elemento.addEventListener("click", HiParrafo, true);
+        elemento2.addEventListener("click", HiImagen, false);
+      }
+      
+      function HiImagen(){
+        alert("hola soy la imagen");
+      }
+      
+      function HiParrafo(){
+        alert("hola soy el parrafo");
+      }
+      
+      window.addEventListener("load", LosEventos, false);
+    </script>
+  </head>
+  <body>
+    <p><img src="/home/crhistian/NetBeansProjects/pildorasInformaticasHTML5/3. Ejercicio/public_html/imagenes/1.jpg">;
+  </body>
+</html>
