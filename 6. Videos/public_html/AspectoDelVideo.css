@@ -1,11 +1,9 @@
 @charset "utf-8";
-
-
-#video{
-  width: 720px;
-  margin: 20px auto;
-  background: #c5964b;
-  padding: 10px;
-  border: 5px solid aquamarine;
-  border-radius: 12px;
+#video {
+    width: 720px;
+    margin: 20px auto;
+    background: #c5964b;
+    padding: 10px;
+    border: 5px solid aquamarine;
+    border-radius: 12px;
 }
