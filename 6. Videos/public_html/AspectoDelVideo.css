@@ -7,3 +7,30 @@
     border: 5px solid aquamarine;
     border-radius: 12px;
 }
+
+nav {
+    margin: 5px 0;
+}
+
+#botones {
+    float: left;
+    width: 100px;
+    height: 25px;
+}
+
+#barra {
+    background-color: rgb(219, 194, 50);
+    width: 600px;
+    height: 16px;
+    border: 1px solid rgb(59, 53, 53);
+    padding: 5px;
+    margin-left: 90px;
+}
+
+#progreso {
+    position: absolute;
+    /*hace que inicie en el bode izq de la barra*/
+    width: 0px;
+    height: 16px;
+    background-color: rgba(0, 0, 150, 2);
+}
