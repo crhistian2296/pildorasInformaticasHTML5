@@ -2,9 +2,9 @@
 #video {
     width: 720px;
     margin: 20px auto;
-    background: #c5964b;
+    background: #665a4a;
     padding: 10px;
-    border: 5px solid aquamarine;
+    border: 5px solid rgb(3, 43, 80);
     border-radius: 12px;
 }
 
@@ -19,7 +19,7 @@ nav {
 }
 
 #barra {
-    background-color: rgb(219, 194, 50);
+    background-color: rgb(150, 111, 99);
     width: 600px;
     height: 16px;
     border: 1px solid rgb(59, 53, 53);
@@ -32,5 +32,5 @@ nav {
     /*hace que inicie en el bode izq de la barra*/
     width: 0px;
     height: 16px;
-    background-color: rgba(0, 0, 150, 2);
+    background-color: rgba(0, 0, 150, 0.4);
 }

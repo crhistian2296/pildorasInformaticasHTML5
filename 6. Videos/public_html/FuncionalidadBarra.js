@@ -1,6 +1,8 @@
 var MyVideo, reproducir, barra, progreso, maximo;
 maximo = 600;
-
+/**
+ * Asingna etiquetas a las variables y les pone escuchas a estas
+ */
 function comenzar() {
     MyVideo = document.getElementById("MyVideo");
     reproducir = document.getElementById("reproducir");
@@ -10,7 +12,9 @@ function comenzar() {
     reproducir.addEventListener("click", playAndPause, false);
     barra.addEventListener("click", adelantandoAndRetrocediendo, false);
 }
-
+/**
+ * Funcionalidad del boton play/pause
+ */
 function playAndPause() {
     if ((MyVideo.paused == false) && (MyVideo.ended == false)) {
         MyVideo.pause();
@@ -23,6 +27,10 @@ function playAndPause() {
     }
 }
 
+/**
+ * Indica en que punto del video nos encontramos mediante la longitud de la barra
+ * de progreso
+ */
 function estado() {
     if (MyVideo.ended == false) {
         /**
@@ -35,9 +43,15 @@ function estado() {
         progreso.style.width = total + "px";
     }
 }
-
+/**
+ * 
+ * @param {*} posicion 
+ * a la variable posicion se le asigna la informacion del click
+ */
 function adelantandoAndRetrocediendo(posicion) {
-    /**(posicion eje x del raton) - (ancho de la barra)*/
+    /**(posicion eje x del raton) - (espacio a la izquierda de la barra) = punto ene pixeles 
+     *                                                                     de la barra
+     */
     var ratonX = posicion.pageX - barra.offsetLeft;
 
     /**
@@ -48,7 +62,7 @@ function adelantandoAndRetrocediendo(posicion) {
     /*asigno nuevo segundo*/
     MyVideo.currentTime = nuevoSec;
     /*asigno nueva posicion en la barra*/
-    progreso.style.width = ratonX * "px";
+    progreso.style.width = ratonX + "px";
 }
 
 window.addEventListener("load", comenzar, false);
