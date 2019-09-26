@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Prueba Formulario</title>
+
+    <link rel="stylesheet" href="" />
+    <script src="" async defer></script>
+</head>
+
+<body>
+    <section>
+        <form name="MiFormulario" id="MiFormulario" method="get" autocomplete="off">
+            <!--casilla de texto-->
+            Email:&nbsp; <input type="email" name="email" id="email" ><br /><br />
+            Buscar:&nbsp; <input type="search" name="buscar" id="buscar" ><br /><br />
+            Url:&nbsp; <input type="url" name="url" id="url" ><br /><br />
+            Edad:&nbsp; <input type="number" name="edad" id="edad" min="18" max="60" >
+
+            <!--boton con la caracteristiaca de que envia la
+            informacion que hay dentro de un formulario*-->
+            <!--value da nombre al boton-->
+            <!-- este boton envia el texto del formulario a la url, pero la idea seria
+            enviarlo a un futuro almacenamiento de datos-->
+            <input type="submit" value="pulsar" />
+        </form>
+    </section>
+</body>
+
+</html>
