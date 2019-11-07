@@ -36,7 +36,7 @@ h1{
   
   /*2.em: multiplicador de tamaño*/
   font:normal 2.6em Verdana, Geneva, sans-serif;
-  background:-webkit-linear-gradient(top, #404fd2, paleturquoise);
+  background: -moz-linear-gradient(top, #404fd2, paleturquoise);
   width: 35%;
   border-radius: 10px;
   border: #161c54 2px solid;
@@ -51,7 +51,7 @@ h1{
 h2{
   font:bold 1.7em Verdana, Geneva, sans-serif;
   /*sentido horario*/
-  padding: 5px 0 5px 35px;
+  padding: 5px 0 5px 45px;
 }
 
 section{
