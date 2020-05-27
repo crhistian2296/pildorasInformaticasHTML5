@@ -3,59 +3,66 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
+
+
 /* 
     Created on : Sep 1, 2019, 11:26:41 PM
     Author     : henry
 */
 
 @charset "utf-8";
+
 /*selector de etiqueta; da color a toda las etiquetas que se llamen igual*/
-body{
-  background-color: #89a6ca;
+
+body {
+    background-color: #89a6ca;
 }
 
 
 /*selector id: modifica la apariencia de aquella etiqueta a la q le demos ese
                atributo id*/
-#cabeceraWeb{
-  background-color: #66cc86;
+
+#cabeceraWeb {
+    background-color: #66cc86;
 }
 
-#navegacionPrincipal{
-  background-color: #e2e365;
+#navegacionPrincipal {
+    background-color: #e2e365;
 }
 
-#barraLateral{
-  background-color: #c27f3b;
-  float: left;
-  height: 1006px;
-  margin-left: 15px;
+#barraLateral {
+    background-color: #c27f3b;
+    float: left;
+    height: 1006px;
+    margin-left: 15px;
 }
 
-#contenidoPrincipal{
-  background-color: #834c61;
-  margin-left: 265px;
-  padding-left: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+#contenidoPrincipal {
+    background-color: #834c61;
+    margin-left: 265px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-#piePrincipal{
-  background-color: #523db8;
-  /*propiedad clear: rompe el funcionamiento de los clear de otros elementos
+#piePrincipal {
+    background-color: #523db8;
+    /*propiedad clear: rompe el funcionamiento de los clear de otros elementos
                      y lo organiza segun el flujo de disposicon de elementos*/
-  clear: left;
-  margin-top: 10px;
-  padding-left: 20px;
-  padding-top: 3px;
-  padding-bottom: 10px;
+    clear: left;
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-top: 3px;
+    padding-bottom: 10px;
 }
+
 
 /*para pasar a mostrar elementos block a inline */
-li{
-  background-color: #bbe32e;
-  display: inline;
-  /*padding: distancia del bode del contenedor al texto que es contenido*/
-  padding-left: 20px;
-  padding-right: 20px;
+
+li {
+    background-color: #bbe32e;
+    display: inline;
+    /*padding: distancia del bode del contenedor al texto que es contenido*/
+    padding-left: 20px;
+    padding-right: 20px;
 }

@@ -5,106 +5,95 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <html>
-  <head>
+
+<head>
     <title>Css3 span</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!--estilo en cabecera-->
     <style>
-      #principal{
-        width: 500px;
-        /*background-color: #9de7e0;*/
-        
-        /*centra el texto dentro de su bloque*/
-        text-align: center;
-        
-        /*da 15 px de margen por arriba y abajo y centra el bloque respecto a la
+        #principal {
+            width: 500px;
+            /*background-color: #9de7e0;*/
+            /*centra el texto dentro de su bloque*/
+            text-align: center;
+            /*da 15 px de margen por arriba y abajo y centra el bloque respecto a la
         ventana*/
-        margin: 15px auto;
-        
-        /*1 medida hace el paddin hacia todas direcciones,
+            margin: 15px auto;
+            /*1 medida hace el paddin hacia todas direcciones,
           2 medidas hace el paddin A arriba y abajo, y el paddin B a los lados;
           4 medida: hace el paddin en el orden top, right, bottom,left
         */
-        padding: 15px;
-          
-        /*borde: grosor, rellerno, color*/
-        border: 3px solid #25514d;
-          
-        /*curvatura del borde
+            padding: 15px;
+            /*borde: grosor, rellerno, color*/
+            border: 3px solid #25514d;
+            /*curvatura del borde
           1 medida para todos las esquinas o
           4 medidas         */
-        border-radius:15px;
-          
-        /**sombra para el bloque; color, desplazamiento horizontal, despalzamiento
+            border-radius: 15px;
+            /**sombra para el bloque; color, desplazamiento horizontal, despalzamiento
         vertical, nivel de difuminacion*/
-        box-shadow: #c49de7 5px 5px 5px;
-        
-        /*degradado de color en el fondo del encabezado(inicio, color1, color2)
+            box-shadow: #c49de7 5px 5px 5px;
+            /*degradado de color en el fondo del encabezado(inicio, color1, color2)
         poner el de google el primero para q los demas no lo copien.
         El orden de ejecucion es de abajo a arriba*
         1ºGoogle chrome, 2ºFirefox, 3ºMicrosoft edge,4ºOpera*/
-        background:-webkit-linear-gradient(left, #F00, #CF0);
-        /*el degradado puede ser lineal o radial y el radial recibe parametros 
+            background: -webkit-linear-gradient(left, #F00, #CF0);
+            /*el degradado puede ser lineal o radial y el radial recibe parametros 
         distintos:"center" y "ellipse" son algunos*/
-        background:-moz-radial-gradient(circle, gray, #CF0);
-        background:-ms-radial-gradient(ellipse, #00F,#3FF);
-        background:-o-linear-gradient(top, #00F,#3FF);
-        
-        /*
+            background: -moz-radial-gradient(circle, gray, #CF0);
+            background: -ms-radial-gradient(ellipse, #00F, #3FF);
+            background: -o-linear-gradient(top, #00F, #3FF);
+            /*
         forma 2018 para cualquier navegador
         background: linear-gradient(to bottom right,Turquoise,lime);
         */
-        
-        /*marco externo*/
-        /*outline: 6px dodgerblue groove;*/
-        /*distancia del marco externo*/
-       /* outline-offset: 10px;*/
-        
-        /*escalar tamaño con un solo parametro.Con 2 parametros ademas se da el efecto
+            /*marco externo*/
+            /*outline: 6px dodgerblue groove;*/
+            /*distancia del marco externo*/
+            /* outline-offset: 10px;*/
+            /*escalar tamaño con un solo parametro.Con 2 parametros ademas se da el efecto
         espejo*/
-        /*-webkit-transform: scale(0.4, -1.7);*/
-        
-        /*-webkit-transform:rotate(5deg); */
-        
-        /*transformar el punto de vista*/
-        /*-webkit-transform:skew(33deg);*/
-        /*Descubrimmiento: solo se puede hacer una transformacion a la vez*/
-        
-        /*deberia funcionar. Al pasar el raton por encima rota 0.1 tiepo de reaccion
+            /*-webkit-transform: scale(0.4, -1.7);*/
+            /*-webkit-transform:rotate(5deg); */
+            /*transformar el punto de vista*/
+            /*-webkit-transform:skew(33deg);*/
+            /*Descubrimmiento: solo se puede hacer una transformacion a la vez*/
+            /*deberia funcionar. Al pasar el raton por encima rota 0.1 tiepo de reaccion
         del efecto y 0.5 lo q tarda en finalizarlo*/
-        transition:transform 0.5s ease 0.1s;
-      }
-      
-      #principal:hover{
-        transform: rotate(5deg);
-      }
-      
-      /*para hacer que la fuente sea la que el desrrollador desee en todos los
+            transition: transform 0.5s ease 0.1s;
+        }
+        
+        #principal:hover {
+            transform: rotate(5deg);
+        }
+        /*para hacer que la fuente sea la que el desrrollador desee en todos los
       navegadores(no funciona aqui pero asi se hace)*/
-     /*
+        /*
       @font-face{
         font-family: 'fuentePropia';
         src:url('file:///run/media/henry/781343535FB65CFE/git/pildorasInformaticasHTML5/2. CSS3NewRules/DejaVuSans-ExtraLight.ttf')
       }
       */
-      /*Estilo de letra, tamaño y fuente*/
-      #titulo{
-        /*font:bold 36px 'fuentePropia';*/
-        font: bold 36px Verdanana, Geneva, sans-serif;
-        text-shadow:gray 3px 3px 2px;
+        /*Estilo de letra, tamaño y fuente*/
         
-        /*opacidad del texto: Los 3 primeros parametros son valores no mayores a
+        #titulo {
+            /*font:bold 36px 'fuentePropia';*/
+            font: bold 36px Verdanana, Geneva, sans-serif;
+            text-shadow: gray 3px 3px 2px;
+            /*opacidad del texto: Los 3 primeros parametros son valores no mayores a
         255 q coombinan Red Greem y Blue*/
-        color: rgba(0, 0, 0, 0.4)
-      }
+            color: rgba(0, 0, 0, 0.623)
+        }
     </style>
-  </head>
-  <body>
+</head>
+
+<body>
     <header id="principal">
-      <span id="titulo">Estilos css3</span>
-      
+        <span id="titulo">Estilos css3</span>
+
     </header>
-  </body>
+</body>
+
 </html>
