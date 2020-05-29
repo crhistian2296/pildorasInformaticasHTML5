@@ -22,7 +22,7 @@ function playAndPause() {
     } else {
         MyVideo.play();
         reproducir.innerHTML = "Pause";
-        /*llama a la funcion estado cada 250 milisegundos*/
+        /*llama a la funcion estado cada 30 milisegundos*/
         bucle = setInterval(estado, 30);
     }
 }
@@ -34,7 +34,7 @@ function playAndPause() {
 function estado() {
     if (MyVideo.ended == false) {
         /**
-         * (600px)/(x) = (9.6s)/(2.5s)      9.6s = duracion del video
+         * (x)/(600px) = (2.5s)/(9.6s)      9.6s = duracion del video
          *                                  2.5s = instante al azar
          *                                  x = cantidad de pixeles en el momento 2.5
          * var total = parseInt((2.5)*(600)/9.6)
@@ -55,7 +55,7 @@ function adelantandoAndRetrocediendo(posicion) {
     var ratonX = posicion.pageX - barra.offsetLeft;
 
     /**
-     * (600px)/(257px) = (9.6)/(t)        t = segundo a obtener usando la ecuacion
+     * (257px)/(600px) = (t)/(9.6)        t = segundo a obtener usando la ecuacion
      *                                    257px = pixel de ejemplo donde se supone hemos clickeado
      */
     var nuevoSec = ratonX * MyVideo.duration / maximo;
